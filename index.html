@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networking Assignment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3e5e5;
+            color: #4a2323;
+        }
+        .text-gold {
+            color: #d4af37;
+        }
+        .bg-red-light {
+            background-color: #fcebeb;
+        }
+        .border-red-dark {
+            border-color: #a54b4b;
+        }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-6 md:p-10 border-4 border-red-dark">
+        <h1 class="text-3xl md:text-4xl font-bold text-center text-red-800 mb-8">Networking Assignment Questions</h1>
+        
+        <div class="space-y-8">
+            <!-- 2 Mark Questions Section -->
+            <div class="bg-red-light p-6 rounded-lg shadow-sm border border-red-dark">
+                <h2 class="text-2xl font-semibold mb-4 text-red-700">2 Mark Questions</h2>
+                
+                <h4 class="text-xl font-medium mt-6 mb-2 text-red-600">Explain the role of an Internet Service Provider (ISP).</h4>
+                <p class="text-red-900">
+                    An <strong>Internet Service Provider (ISP)</strong> is a company that provides you with an internet connection. Think of them as the company that gives you the special wire or signal to access the internet. They allow you to browse websites, send emails, and stream videos.
+                </p>
+
+                <h4 class="text-xl font-medium mt-6 mb-2 text-red-600">Expand ICANN and state its function.</h4>
+                <p class="text-red-900">
+                    <strong>ICANN</strong> stands for the <strong>Internet Corporation for Assigned Names and Numbers</strong>. Its job is to keep the internet organized. It makes sure that every website name and IP address is unique, so there are no mix-ups when you try to visit a website.
+                </p>
+
+                <h4 class="text-xl font-medium mt-6 mb-2 text-red-600">Explain the default subnet mask?</h4>
+                <p class="text-red-900">
+                    A <strong>subnet mask</strong> is like a special filter that works with an IP address. It tells a computer which part of the IP address is for the network and which part is for the specific device (like your computer or phone). The "default" mask is the standard one used for different types of IP addresses.
+                </p>
+
+                <h4 class="text-xl font-medium mt-6 mb-2 text-red-600">Define Subnet and supernet.</h4>
+                <p class="text-red-900">
+                    A <strong>subnet</strong> is a small network that is part of a larger one. The process of dividing a big network into smaller, more manageable parts is called <strong>subnetting</strong>. A <strong>supernet</strong> is the opposite. It's when you combine several small networks into one big network. The process of combining them is called <strong>supernetting</strong>.
+                </p>
+            </div>
+
+            <!-- 4 Mark Questions Section -->
+            <div class="bg-red-light p-6 rounded-lg shadow-sm border border-red-dark">
+                <h2 class="text-2xl font-semibold mb-4 text-red-700">4 Mark Questions</h2>
+                
+                <h4 class="text-xl font-medium mt-6 mb-2 text-red-600">State the importance of IPv6 over IPv4.</h4>
+                <p class="text-red-900">
+                    <strong>IPv6</strong> is an important evolution of the internet protocol due to several key advantages over IPv4:
+                </p>
+                <ul class="list-disc list-inside text-red-900 mt-2 space-y-2">
+                    <li><strong>Larger Address Space:</strong> IPv6 has 128-bit addresses, offering a practically limitless number of unique addresses ($2^{128}$), solving the address exhaustion problem of IPv4.</li>
+                    <li><strong>No NAT Required:</strong> Because of the vast address space, Network Address Translation (NAT) is no longer needed, simplifying network design and improving end-to-end connectivity.</li>
+                    <li><strong>Built-in Security:</strong> IPv6 includes built-in security features through IPsec, making it more secure by default.</li>
+                    <li><strong>More Efficient Routing:</strong> The IPv6 header is simpler and has a fixed size, which allows routers to process packets more quickly.</li>
+                    <li><strong>Improved Quality of Service (QoS):</strong> The "Flow Label" field in the IPv6 header allows for better handling of real-time data like video and audio streaming.</li>
+                    <li><strong>Auto-Configuration:</strong> IPv6 supports stateless address auto-configuration (SLAAC), which lets devices automatically get an IP address without a DHCP server, simplifying network administration.</li>
+                    <li><strong>Efficient Multicast:</strong> IPv6 uses multicast addresses more efficiently to send a single packet to multiple destinations at once, reducing network traffic.</li>
+                    <li><strong>No Broadcasts:</strong> IPv6 does not use broadcast addresses, which can be a source of network congestion. It replaces them with multicast for more targeted communication.</li>
+                    <li><strong>Improved Header Structure:</strong> The streamlined header removes fields that were rarely used in IPv4, making it more efficient.</li>
+                    <li><strong>Future-Proofing:</strong> The design of IPv6 ensures that the internet can continue to grow and support a massive number of new devices, like those in the Internet of Things (IoT).</li>
+                </ul>
+
+                <h4 class="text-xl font-medium mt-6 mb-2 text-red-600">Compare IPv4 and IPv6 in detail.</h4>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-red-200 rounded-md overflow-hidden">
+                        <thead class="bg-red-100">
+                            <tr>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-red-600 uppercase tracking-wider">Feature</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-red-600 uppercase tracking-wider">IPv4</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-red-600 uppercase tracking-wider">IPv6</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-red-200">
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-red-900">Address Size</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">32 bits</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">128 bits</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-red-900">Address Example</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Looks like `192.168.1.1`</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Looks much longer, like `2001:0db8::8a2e:0370:7334`</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-red-900">Address Format</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Uses four numbers separated by dots.</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Uses a mix of numbers and letters separated by colons.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-red-900">Header Length</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Variable (20 to 60 bytes)</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Fixed (40 bytes)</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-red-900">Security</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">IPsec is optional.</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">IPsec is a mandatory part of the protocol suite.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-red-900">Fragmentation</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Can be done by routers and the sending host.</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Done only by the sending host.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-red-900">Routing</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">More complex with NAT and variable headers.</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">More efficient due to simpler headers and no NAT.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-red-900">Address Resolution</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Uses ARP to map IP to MAC addresses.</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Uses Neighbor Discovery Protocol (NDP).</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-red-900">Configuration</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Manual or DHCP.</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Stateless Auto-Configuration (SLAAC) or DHCPv6.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-red-900">Address Availability</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Running out.</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Virtually unlimited.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 class="text-xl font-medium mt-6 mb-2 text-red-600">Draw and explain the IPv4 header format.</h4>
+                <p class="text-red-900 mb-4">
+                    The <strong>IPv4 header</strong> is like the envelope for an internet packet. It contains important information that helps the packet get to its destination.
+                </p>
+                <pre class="bg-red-100 p-4 rounded-md text-sm font-mono overflow-x-auto text-red-800">
++----------------------+----------------------+----------------------+----------------------+
+| Version (4) | IHL (4) | Type of Service (8) | Total Length (16) |
++----------------------+----------------------+----------------------+----------------------+
+| Identification (16) | Flags (3) | Fragment Offset (13) |
++----------------------+----------------------+----------------------+----------------------+
+| Time to Live (8) | Protocol (8) | Header Checksum (16) |
++----------------------+----------------------+----------------------+----------------------+
+| Source IP Address (32) |
++----------------------+----------------------+----------------------+----------------------+
+| Destination IP Address (32) |
++----------------------+----------------------+----------------------+----------------------+
+| Options (variable) |
++----------------------+----------------------+----------------------+----------------------+
+                </pre>
+                <p class="text-red-900 mt-4">
+                    The key fields are:
+                </p>
+                <ul class="list-disc list-inside text-red-900 mt-2 space-y-2">
+                    <li><strong>1. Version (4 bits):</strong> Indicates the IP version, which is 4.</li>
+                    <li><strong>2. IHL (Internet Header Length, 4 bits):</strong> Specifies the size of the header, in 32-bit chunks. The minimum value is 5, meaning a 20-byte header.</li>
+                    <li><strong>3. Type of Service (8 bits):</strong> Used for Quality of Service (QoS), allowing packets to be prioritized based on network needs (e.g., speed, reliability).</li>
+                    <li><strong>4. Total Length (16 bits):</strong> The total size of the IP packet (header and data) in bytes. The maximum size is 65,535 bytes.</li>
+                    <li><strong>5. Identification (16 bits):</strong> A unique ID for each packet sent from a host. All fragments of a single packet share the same ID.</li>
+                    <li><strong>6. Flags (3 bits):</strong> Control how fragmentation happens. One bit indicates if the packet can be fragmented at all, and another indicates if there are more fragments to follow.</li>
+                    <li><strong>7. Fragment Offset (13 bits):</strong> Specifies the position of a fragment in the original packet, helping the receiver reassemble the data in the correct order.</li>
+                    <li><strong>8. Time to Live (TTL, 8 bits):</strong> A countdown timer. Each router the packet passes through decreases this number by one. If it hits zero, the packet is discarded to prevent infinite loops.</li>
+                    <li><strong>9. Protocol (8 bits):</strong> Identifies the next-level protocol carried in the packet's data portion (e.g., TCP or UDP).</li>
+                    <li><strong>10. Header Checksum (16 bits):</strong> A check to ensure the header hasn't been corrupted in transit. It is recalculated at each router.</li>
+                    <li><strong>11. Source IP Address (32 bits):</strong> The IP address of the device that sent the packet.</li>
+                    <li><strong>12. Destination IP Address (32 bits):</strong> The IP address of the intended recipient.</li>
+                </ul>
+
+                <h4 class="text-xl font-medium mt-6 mb-2 text-red-600">Draw and explain the IPv6 header format.</h4>
+                <p class="text-red-900 mb-4">
+                    The <strong>IPv6 header</strong> is also like an envelope, but it's simpler and more efficient than the IPv4 one. It has a fixed size, which makes it easier for routers to process.
+                </p>
+                <pre class="bg-red-100 p-4 rounded-md text-sm font-mono overflow-x-auto text-red-800">
++----------------------+----------------------+----------------------+
+| Version (4) | Traffic Class (8) | Flow Label (20) |
++----------------------+----------------------+----------------------+
+| Payload Length (16) | Next Header (8) | Hop Limit (8) |
++----------------------+----------------------+----------------------+
+| Source Address (128) |
+| ... |
+| ... |
+| ... |
++----------------------+----------------------+----------------------+
+| Destination Address (128) |
+| ... |
+| ... |
+| ... |
++----------------------+----------------------+----------------------+
+                </pre>
+                <p class="text-red-900 mt-4">
+                    The key fields are:
+                </p>
+                <ul class="list-disc list-inside text-red-900 mt-2 space-y-2">
+                    <li><strong>1. Version (4 bits):</strong> Indicates the IP version, which is always 6.</li>
+                    <li><strong>2. Traffic Class (8 bits):</strong> Similar to IPv4's Type of Service, it prioritizes packets for Quality of Service (QoS).</li>
+                    <li><strong>3. Flow Label (20 bits):</strong> Used to label sequences of packets that need special handling, like real-time streaming, without needing to check all header details at each router.</li>
+                    <li><strong>4. Payload Length (16 bits):</strong> The total size of the data and any extension headers that follow the main IPv6 header.</li>
+                    <li><strong>5. Next Header (8 bits):</strong> Identifies the next header in the chain, which could be an extension header or the transport layer protocol (like TCP).</li>
+                    <li><strong>6. Hop Limit (8 bits):</strong> The maximum number of hops a packet can take. It works like IPv4's TTL, preventing packets from looping forever.</li>
+                    <li><strong>7. Source Address (128 bits):</strong> The full IPv6 address of the device that sent the packet.</li>
+                    <li><strong>8. Destination Address (128 bits):</strong> The full IPv6 address of the intended recipient.</li>
+                    <li><strong>9. No Checksum:</strong> Unlike IPv4, IPv6 does not have a header checksum, which speeds up processing at each router.</li>
+                    <li><strong>10. Extension Headers:</strong> IPv6 uses optional extension headers to add extra information (like security or fragmentation details), which are placed between the main header and the payload. This modular design keeps the main header small and efficient.</li>
+                </ul>
+
+                <h4 class="text-xl font-medium mt-6 mb-2 text-red-600">Explain ARP working in brief.</h4>
+                <p class="text-red-900">
+                    <strong>ARP (Address Resolution Protocol)</strong> is a way for a device to find the physical address (MAC address) of another device on the same local network when it only knows the IP address. Here is how the process works:
+                </p>
+                <ul class="list-decimal list-inside text-red-900 mt-2 space-y-2">
+                    <li><strong>1. Check the Cache:</strong> When Device A wants to send data to Device B, it first checks its own ARP cache (a table of recent IP-to-MAC address mappings) to see if it already knows Device B's MAC address.</li>
+                    <li><strong>2. Send a Broadcast:</strong> If the address isn't in the cache, Device A creates an ARP request message. This message asks, "Who has this IP address?" and includes Device A's own IP and MAC addresses.</li>
+                    <li><strong>3. The Broadcast Spreads:</strong> The ARP request is sent as a broadcast, meaning every device on the local network receives it.</li>
+                    <li><strong>4. The Target Replies:</strong> All devices check if the IP address in the request matches their own. Only the device that matches (Device B) will respond.</li>
+                    <li><strong>5. Send a Unicast Reply:</strong> Device B creates an ARP reply message. This message contains its own MAC address and sends it directly back to Device A (a "unicast" message, not a broadcast).</li>
+                    <li><strong>6. Update the Cache:</strong> Device A receives the reply and adds Device B's IP and MAC address to its ARP cache. This mapping is stored for a short time so the process doesn't have to repeat for every single packet.</li>
+                    <li><strong>7. Final Communication:</strong> Now that Device A knows Device B's MAC address, it can send the data packet directly to it.</li>
+                    <li><strong>8. Cache Cleanup:</strong> ARP cache entries have a lifespan. They expire after a certain amount of time to ensure the addresses are up-to-date.</li>
+                    <li><strong>9. Proactive Updates:</strong> A device can also send a "gratuitous ARP" message to announce its presence and update other devices' caches without being asked.</li>
+                    <li><strong>10. The IP-to-MAC Link:</strong> In essence, ARP is the fundamental process that links a logical IP address to a physical MAC address on a local network, allowing devices to communicate.</li>
+                </ul>
+                
+                <h4 class="text-xl font-medium mt-6 mb-2 text-red-600">Explain ARP message format.</h4>
+                <p class="text-red-900">
+                    An ARP message is a simple message with a few key pieces of information, formatted into specific fields.
+                </p>
+                <ul class="list-disc list-inside text-red-900 mt-2 space-y-2">
+                    <li><strong>1. Hardware Type (2 bytes):</strong> Specifies the type of network hardware, such as Ethernet.</li>
+                    <li><strong>2. Protocol Type (2 bytes):</strong> Specifies the network protocol, such as IPv4.</li>
+                    <li><strong>3. Hardware Address Length (1 byte):</strong> The length of the hardware address (e.g., 6 bytes for an Ethernet MAC address).</li>
+                    <li><strong>4. Protocol Address Length (1 byte):</strong> The length of the protocol address (e.g., 4 bytes for an IPv4 address).</li>
+                    <li><strong>5. Operation (2 bytes):</strong> Identifies if the message is an ARP request (1) or a reply (2).</li>
+                    <li><strong>6. Sender Hardware Address (6 bytes for Ethernet):</strong> The MAC address of the device sending the message.</li>
+                    <li><strong>7. Sender Protocol Address (4 bytes for IPv4):</strong> The IP address of the device sending the message.</li>
+                    <li><strong>8. Target Hardware Address (6 bytes for Ethernet):</strong> The MAC address of the device being asked for. This field is empty (all zeros) in an ARP request.</li>
+                    <li><strong>9. Target Protocol Address (4 bytes for IPv4):</strong> The IP address of the device being asked for.</li>
+                </ul>
+
+                <h4 class="text-xl font-medium mt-6 mb-2 text-red-600">Compare ARP and RARP in detail.</h4>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-red-200 rounded-md overflow-hidden">
+                        <thead class="bg-red-100">
+                            <tr>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-red-600 uppercase tracking-wider">Feature</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-red-600 uppercase tracking-wider">ARP (Address Resolution Protocol)</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-red-600 uppercase tracking-wider">RARP (Reverse Address Resolution Protocol)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-red-200">
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-red-900">Main Job</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Maps an IP address to a MAC address.</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Maps a MAC address to an IP address.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-red-900">Direction of Mapping</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">From the Network layer to the Data Link layer.</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">From the Data Link layer to the Network layer.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-red-900">Request Type</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Broadcasts a request to the entire network.</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Broadcasts a request to a dedicated RARP server.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-red-900">Used by</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">All devices in a local network to find each other.</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Used by diskless machines to get an IP address when booting up.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-red-900">Server Dependency</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Does not require a special server to work.</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Requires a dedicated RARP server to provide the IP addresses.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-red-900">Table Maintained By</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">The local host itself maintains its own ARP cache.</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">The RARP server maintains a table of MAC-to-IP mappings.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-red-900">Modern Usage</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Still widely used today.</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-700">Largely replaced by modern protocols like DHCP and BOOTP.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 class="text-xl font-medium mt-6 mb-2 text-red-600">For the given IP address below:</h4>
+                <div class="space-y-4">
+                    <div class="bg-red-100 p-4 rounded-md">
+                        <h5 class="font-bold text-red-800">126.33.43.131</h5>
+                        <ul class="list-disc list-inside text-red-700 mt-2 space-y-1">
+                            <li><strong>Class:</strong> Class A (The first number is between 1 and 126).</li>
+                            <li><strong>Network Address:</strong> 126.0.0.0</li>
+                            <li><strong>Host Address:</strong> 33.43.131</li>
+                            <li><strong>Number of Hosts:</strong> A huge number, over 16 million.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-red-100 p-4 rounded-md">
+                        <h5 class="font-bold text-red-800">16.15.42.12</h5>
+                        <ul class="list-disc list-inside text-red-700 mt-2 space-y-1">
+                            <li><strong>Class:</strong> Class A (The first number is between 1 and 126).</li>
+                            <li><strong>Network Address:</strong> 16.0.0.0</li>
+                            <li><strong>Host Address:</strong> 15.42.12</li>
+                            <li><strong>Number of Hosts:</strong> A huge number, over 16 million.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-red-100 p-4 rounded-md">
+                        <h5 class="font-bold text-red-800">199.24.23.52</h5>
+                        <ul class="list-disc list-inside text-red-700 mt-2 space-y-1">
+                            <li><strong>Class:</strong> Class C (The first number is between 192 and 223).</li>
+                            <li><strong>Network Address:</strong> 199.24.23.0</li>
+                            <li><strong>Host Address:</strong> 52</li>
+                            <li><strong>Number of Hosts:</strong> A small number, 254.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-red-100 p-4 rounded-md">
+                        <h5 class="font-bold text-red-800">167.23.58.65</h5>
+                        <ul class="list-disc list-inside text-red-700 mt-2 space-y-1">
+                            <li><strong>Class:</strong> Class B (The first number is between 128 and 191).</li>
+                            <li><strong>Network Address:</strong> 167.23.0.0</li>
+                            <li><strong>Host Address:</strong> 58.65</li>
+                            <li><strong>Number of Hosts:</strong> A medium number, over 65,000.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
